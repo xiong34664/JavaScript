@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="move.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var odiv1 = document.getElementById('div1');
+            var odiv2 = document.getElementById('div2');
+            var odiv3 = document.getElementById('div3');
+            var odiv4 = document.getElementById('div4');
+
+            odiv1.onmouseover = function () {
+                startMove(odiv1, {width: 200, height: 200, opacity: 30});
+            }
+
+            odiv2.onmouseover = function () {
+                startMove(odiv2, {width: 200, height: 200, opacity: 30});
+            }
+
+            odiv3.onmouseover = function () {
+                startMove(odiv3, {width: 200, height: 200, opacity: 30});
+            }
+
+            odiv4.onmouseover = function () {
+                startMove(odiv4, {height: 220});
+            }
+        }
+    </script>
+    <style type="text/css">
+        #div1, #div2, #div3, #div4 {
+            width: 100px;
+            height: 100px;
+            background: #f55b5b;
+            float: left;
+            margin-left: 20px;
+            border: 5px solid #676767;
+        }
+    </style>
+</head>
+<body>
+<div id='div1'></div>
+<div id='div2'></div>
+<div id='div3'></div>
+<div id='div4'></div>
+</body>
+</html>
